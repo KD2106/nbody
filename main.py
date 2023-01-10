@@ -81,14 +81,9 @@ def main():
             plt.sca(ax)
             plt.cla() 
 
-            """ xx = pos_save[:,0,max(i-50,0):i+1]
-            yy = pos_save[:,1,max(i-50,0):i+1]
-            plt.scatter(xx,yy,s=1,color=[.7,.7,1])
-            ax.set(xlim=(-5,5), ylim=(-5,5))
-            ax.set_aspect('equal', 'box')
-            ax.set_xticks([-5,-4,-3-2,-1,0,1,3,4,5])
-            ax.set_yticks([-5,-4,-3,-2,-1,0,1,2,3,4,5])"""
-
+            ax.set_xlabel('X axis')
+            ax.set_ylabel('Y axis')
+            ax.set_zlabel('Z axis')
             ax.set(xlim=(-5,5), ylim=(-5,5), zlim=(-5,5))
             ax.scatter(pos[:,0], pos[:,1], pos[:,2], s=10, color='blue')
             plt.pause(0.001)
@@ -99,15 +94,3 @@ def main():
     
 if __name__ == '__main__':
     main()
-
-
-
-
-
-"""for i in range(100):
-    x.append(i)
-    y.append(i**2)
-    plt.scatter(x,y,s=10)
-    plt.pause(0.001)
-    
-plt.show()"""
