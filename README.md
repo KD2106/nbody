@@ -4,6 +4,6 @@
 
 - We use Leap-Frog integration to solve the differential equation associated with the system (**F** = m **a**), and plot the evolution of the system in 3D using matplotlib.
 
-- This project was inspired by a similar project created by Philip Mosz: https://github.com/pmocz/nbody-python
+- This project was inspired by the following project created by Philip Mosz: https://github.com/pmocz/nbody-python
 
 ![One Frame of Animation](https://github.com/KD2106/nbody/blob/main/Figure_1.png)
